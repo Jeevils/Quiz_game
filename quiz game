@@ -1,0 +1,40 @@
+print("Welcome to my computer quiz!")
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Okay! Let's play :) ")
+score = 0
+
+answer = input ("What does CPU stand for? ")
+if answer.lower() == "central processing unit":
+    print("correct!")
+    score += 1
+else:
+    print("incorrect!")
+    
+answer = input ("What case is used in Python? ")
+if answer.lower() == "snake case":
+    print("correct!")
+    score += 1
+else:
+    print("incorrect!")
+    
+answer = input ("Who is the writer of Community? ")
+if answer.lower() == "dan harmon":
+    print("correct!")
+    score += 1
+else:
+    print("incorrect!")
+    
+answer = input ("Who plays Joel in the Last of us TV show? ")
+if answer.lower() == "pedro pascal":
+    print("correct!")
+    score += 1
+else:
+    print("incorrect!")
+    
+print ("You got " + str(score) + " questions correct!")
+print ("You got " + str((score/4) * 100)  + " %.")
